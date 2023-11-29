@@ -1,5 +1,7 @@
 import './App.css';
 
+let name = "Heaven Destroyer"
+
 function App() {
   return (
     <>
@@ -8,7 +10,9 @@ function App() {
         <li>About</li>
         <li>Contact</li>
       </nav>
+
       <div className='container'>
+        <h1>Hello {name}</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit adipisci itaque atque culpa, officiis vel nesciunt assumenda provident quia pariatur cumque mollitia commodi odit ipsum aliquam recusandae saepe eius debitis!
         </p>
