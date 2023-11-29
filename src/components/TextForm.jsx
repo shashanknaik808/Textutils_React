@@ -8,11 +8,10 @@ function TextForm(props) {
     function handleUpClick() {
         console.log("On up Click");
     }
-    function handleOnChange() {
+    function handleOnChange(event) {
         console.log("on change");
+        setText(event.target.value)
     }
-
-    function TextForm(props) {
         return (
             <>
                 <div className='mb-3'>
@@ -21,7 +20,7 @@ function TextForm(props) {
                         className='form-control' id='myBox' rows="8" >
                     </textarea>
                 </div>
-                <button className='btn btn-primary'>Convert to Uppercase</button>
+                <button className='btn btn-primary' onClick={handleUpClick}>Convert to Uppercase</button>
             </>
         )
     }
