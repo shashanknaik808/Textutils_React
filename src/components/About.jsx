@@ -7,6 +7,18 @@ function About() {
         backgroundColor: 'black'
     });
 
+    function toggleStyle() {
+        (myStyle.color === "white") ?
+            setMyStyle({
+                color: 'black',
+                backgroundColor: 'white'
+            }) :
+            setMyStyle({
+                color: 'white',
+                backgroundColor: 'black'
+            });
+    }
+
     return (
         <>
             <div className='container' style={myStyle}>
