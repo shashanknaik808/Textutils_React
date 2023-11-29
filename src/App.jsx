@@ -4,7 +4,8 @@ import Navbar from './components/Navbar';
 function App() {
   return (
     <>
-      <Navbar title="Text Util" />
+      <Navbar title="Text Util"
+        about="About Text Utilities" />
     </>
   );
 }
