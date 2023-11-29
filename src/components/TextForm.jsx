@@ -28,6 +28,7 @@ function TextForm(props) {
                     </textarea>
                 </div>
                 <button className='btn btn-primary' onClick={handleUpClick}>Convert to Uppercase</button>
+                <button className='btn btn-primary mx-2' onClick={handleLoClick}>Convert to Lowercase</button>
             </div>
 
             <div className='container my-3'>
