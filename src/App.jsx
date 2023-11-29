@@ -1,6 +1,6 @@
 import './App.css';
 
-let name = "Heaven Destroyer"
+let name = "<b>Heaven Destroyer<b/>"
 
 function App() {
   return (
