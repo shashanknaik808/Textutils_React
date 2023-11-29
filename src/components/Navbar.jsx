@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 function Navbar(props) {
     return (
@@ -43,6 +44,10 @@ function Navbar(props) {
     )
 }
 
+Navbar.propTypes = {
+    title: PropTypes.string.isRequired,
+    about: PropTypes.string
+}
 
 
 export default Navbar;
