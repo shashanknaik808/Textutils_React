@@ -1,9 +1,15 @@
 import React from 'react';
 
 function About() {
+
+    let myStyle = {
+        color: 'red',
+        backgroundColor: 'blue'
+    }
+
     return (
         <>
-            <div className='container'>
+            <div className='container' style={myStyle}>
                 <h1 className='my-3'>About Us</h1>
                 <div class="accordion" id="accordionExample">
                     <div class="accordion-item">
