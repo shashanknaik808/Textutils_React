@@ -49,5 +49,9 @@ Navbar.propTypes = {
     about: PropTypes.string
 }
 
+Navbar.defaultProps = {
+  title: "Stranger",
+  about: "Soldier"
+}
 
 export default Navbar;
