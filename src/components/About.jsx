@@ -3,8 +3,8 @@ import React from 'react';
 function About() {
 
     let myStyle = {
-        color: 'red',
-        backgroundColor: 'blue'
+        color: 'white',
+        backgroundColor: 'black'
     }
 
     return (
@@ -14,7 +14,7 @@ function About() {
                 <div class="accordion" id="accordionExample">
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingOne">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <button class="accordion-button" style={myStyle} type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                 Accordion Item #1
                             </button>
                         </h2>
