@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 function About() {
 
-    let myStyle = {
+    const [myStyle, setMyStyle] = useState({
         color: 'white',
         backgroundColor: 'black'
-    }
+    });
 
     return (
         <>
