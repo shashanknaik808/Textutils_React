@@ -13,6 +13,11 @@ function TextForm(props) {
         console.log("on change");
         setText(event.target.value)
     }
+    function handleLoClick() {
+        let newText = text.toLowerCase();
+        setText(newText);
+    }
+
     return (
         <>
             <div className='container'>
@@ -24,7 +29,7 @@ function TextForm(props) {
                 </div>
                 <button className='btn btn-primary' onClick={handleUpClick}>Convert to Uppercase</button>
             </div>
-            
+
             <div className='container my-3'>
                 <h1>Your Text Summary</h1>
                 <p>{text.split(" ").length} words & {text.length} characters</p>
