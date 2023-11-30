@@ -20,6 +20,12 @@ function TextForm(props) {
     function handleClearText() {
         setText('');
     }
+    function handleCopy() {
+        let text = document.getElementById("myBox");
+        text.ariaSelected();
+        text.setSelectionRange(0, 9999);
+        navigator.clipboard.writeText(text.value);
+    }
 
     return (
         <>
@@ -30,9 +36,10 @@ function TextForm(props) {
                         className='form-control' id='myBox' rows="8" >
                     </textarea>
                 </div>
-                <button className='btn btn-primary' onClick={handleUpClick}>Convert to Uppercase</button>
+                <button className='btn btn-primary mx-2' onClick={handleUpClick}>Convert to Uppercase</button>
                 <button className='btn btn-primary mx-2' onClick={handleLoClick}>Convert to Lowercase</button>
                 <button className='btn btn-primary mx-2' onClick={handleClearText}>Clear Text</button>
+                <button className='btn btn-primary mx-2' onClick={handleCopy}>Copy Text</button>
             </div>
 
             <div className='container my-3'>
