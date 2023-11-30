@@ -38,16 +38,19 @@ function App() {
 
   }
 
-  function toggleMode() {
-    if (mode === 'light') {
-      setMode('dark');
-      document.body.style.background = '#042743';
-      showAlert("Dark Mode has been Enabled", "success");
+  function toggleMode(e) {
+    if (state.darkMode) {
+      setState(prev => ({
+        ...prev,
+        darkMode: false,
+      }));
+
     } else {
-      setMode('light');
-      document.body.style.background = '#ffffff';
-      showAlert("Dark Mode has been Disabled", "success");
-    };
+      setState(prev => ({
+        ...prev,
+        darkMode: true,
+      }));
+    }
   }
 
   return (
