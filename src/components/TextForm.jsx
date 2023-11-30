@@ -53,7 +53,7 @@ function TextForm(props) {
 
             <div className='container my-3'>
                 <h1>Your Text Summary</h1>
-                <p>{text.split(" ").length} words & {text.length} characters</p>
+                <p>{text.split(" ").filter(element => element.length != 0).length} words & {text.length} characters</p>
                 <p>{0.7 * text.split(" ").length}seconds to read</p>
                 <h2>Preview</h2>
                 <p>{text}</p>
