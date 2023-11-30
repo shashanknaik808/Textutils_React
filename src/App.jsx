@@ -24,11 +24,18 @@ function App() {
   }, [state.darkMode]);
 
   function showAlert(message, type) {
-    setAlert({
-      msg: message,
-      type: type
-    });
-    setTimeout(() => { setAlert(null) }, 2000);
+    setState(prev => ({
+      ...prev,
+      alert: { msg: message, type: type }
+    }));
+
+    setTimeout(() => {
+      setState(prev => ({
+        ...prev,
+        alert: null
+      }))
+    }, 1000);
+
   }
 
   function toggleMode() {
