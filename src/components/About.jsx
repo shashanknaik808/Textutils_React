@@ -8,15 +8,20 @@ function About() {
     });
 
     function toggleStyle() {
-        (myStyle.color === "white") ?
+        if (myStyle.color === "white") {
             setMyStyle({
                 color: 'black',
                 backgroundColor: 'white'
-            }) :
+            });
+            setBtnText("Enable dark Mode");
+        }
+        else {
             setMyStyle({
                 color: 'white',
                 backgroundColor: 'black'
             });
+            setBtnText("Enable Light Mode")
+        }
     }
 
     return (
