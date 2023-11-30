@@ -26,7 +26,7 @@ function App() {
     } else {
       setMode('light');
       document.body.style.background = '#ffffff';
-      showAlert("Dark Mode has been Enabled", "success");
+      showAlert("Dark Mode has been Disabled", "success");
     };
   }
 
