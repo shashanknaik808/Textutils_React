@@ -22,7 +22,7 @@ function TextForm(props) {
     }
     function handleCopy() {
         let text = document.getElementById("myBox");
-        text.ariaSelected();
+        text.select();
         text.setSelectionRange(0, 9999);
         navigator.clipboard.writeText(text.value);
     }
