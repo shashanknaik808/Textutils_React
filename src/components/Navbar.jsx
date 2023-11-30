@@ -33,6 +33,10 @@ function Navbar(props) {
                                 <a className="nav-link disabled" aria-disabled="true">Disabled</a>
                             </li>
                         </ul>
+                        <div className={`form-check form-switch ${props.darkMode ? 'text-light' : 'text-dark'}`}>
+                            <input className="form-check-input mx-2" type="checkbox" role="switch" id="flexSwitchCheckChecked" onClick={props.toggleMode} />
+                            <label className="form-check-label mx-2" htmlFor="flexSwitchCheckChecked">{`${props.darkMode ? 'Disable' : 'Enable'} Dark Mode`}</label>
+                        </div>
                     </div>
                 </div>
             </nav>
