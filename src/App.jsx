@@ -20,10 +20,12 @@ function App() {
   function toggleMode() {
     if (mode === 'light') {
       setMode('dark');
-      document.body.style.backgroundColor = '#495057'
+      document.body.style.background = '#042743';
+      showAlert("Dark Mode has been Enabled", "success");
     } else {
       setMode('light');
-      document.body.style.backgroundColor = '#ffffff'
+      document.body.style.background = '#ffffff';
+      showAlert("Dark Mode has been Enabled", "success");
     };
   }
 
