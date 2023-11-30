@@ -8,27 +8,31 @@ function TextForm(props) {
     function handleUpClick() {
         let newText = text.toUpperCase();
         setText(newText);
+        props.showAlert("Converted to Upper Case", "success");
     }
     function handleOnChange(event) {
         console.log("on change");
-        setText(event.target.value)
+        setText(event.target.value);
     }
     function handleLoClick() {
         let newText = text.toLowerCase();
         setText(newText);
+        props.showAlert("Converted to Lower Case", "success");
     }
     function handleClearText() {
         setText('');
+        props.showAlert("Text Box Cleared", "success");
     }
-    function handleCopy() {
+    function handleCopy(eve) {
         let text = document.getElementById("myBox");
         text.select();
-        text.setSelectionRange(0, 9999);
         navigator.clipboard.writeText(text.value);
+        props.showAlert("Copied Text to clipboard", "success");
     }
     function handleExtraSpaces() {
         let newText = text.split(/[ ]+/);
         setText(newText.join(" "));
+        props.showAlert("Extra spaces removed", "success");
     }
 
     return (
