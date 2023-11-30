@@ -41,10 +41,6 @@ function TextForm(props) {
                 <div className='mb-3'>
                     <h1>{props.heading}</h1>
                     <textarea value={text} onChange={handleOnChange}
-                        style={{
-                            backgroundColor: (props.mode === 'dark') ? '#6c757d' : '#ffffff',
-                            color: (props.mode === 'dark') ? '#ffffff' : '#000000'
-                        }}
                         className='form-control' id='myBox' rows="8" >
                     </textarea>
                 </div>
@@ -62,7 +58,7 @@ function TextForm(props) {
                 <h2>Preview</h2>
                 <p>{text}</p>
             </div>
-        
+
         </>
     )
 }
